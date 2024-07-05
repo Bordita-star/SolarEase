@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SolarEase</string>
+    <string name="main_text_inclinacion">"Inclinación de los paneles"</string>
+
+</resources>

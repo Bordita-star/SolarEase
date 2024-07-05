@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solar_ease"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="363dp"
+        android:layout_height="608dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="SolarEase"
+            android:textAlignment="center"
+            android:textColor="#1A1A1B"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Latitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Latitud(Grados*Decimales)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Longitud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Longitud(Grados*Decimales)"
+            android:inputType="text"
+            android:textColor="#163518"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Area disponible para paneles(Metros cuadrados)"
+            android:inputType="number|numberDecimal"
+            android:textColor="#163518"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFC107"
+            android:max="90"
+            android:progress="30"
+            android:progressTint="#E1EF511F" />
+
+        <TextView
+            android:id="@+id/inclinacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/fondotext"
+            android:text="@string/main_text_inclinacion"
+            android:textAlignment="center"
+            android:textColor="#F8F0F0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="38dp"
+            android:backgroundTint="#731F3A"
+            android:insetTop="5dp"
+            android:text="CALCULAR PRODUCCION DE ENERGIA"
+            app:iconPadding="3dp"
+            app:iconSize="10dp" />
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@color/colortext"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#731F3A"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
